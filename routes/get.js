@@ -3,15 +3,16 @@ import data from './data.js';
 
 const router = new Router();
 
-router.get('/poem', ({ response }) => {
+router.get('/api/user', context => {});
+router.get('/api/user/:id', context => {});
+
+router.get('/api/poem', ({ response }) => {
 	response.body = data.topics;
 });
 
-router.get('/poem/:id', context => {
+router.get('/api/poem/:id', context => {
 	const { id } = helpers.getQuery(context, { mergeParams: true });
 	context.response.body = data.topics.find(item => item.id === parseInt(id));
 });
-
-router.get('/user', context => {});
 
 export default router;

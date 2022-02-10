@@ -23,3 +23,4 @@
 
 - https://pablomagaz.com/static/slides/Pablo_Magaz_REST_API_Deno_Oak.pdf
 - https://medium.com/fivecodedevelopment/restful-api-with-deno-oak-and-postgresql-7780c41eeb74
+- https://medium.com/@andrewhheller/storing-user-passwords-with-bcrypt-e3b7306b870a
