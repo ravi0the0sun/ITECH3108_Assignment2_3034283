@@ -1,0 +1,19 @@
+{
+	"name": "ITECH3108_Assignment2_30342838",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"client": "npm start --prefix client",
+		"dev-server": "denon run --allow-net server.js",
+		"server": "deno run server.js",
+		"start": "concurrently \"npm run server\" \"npm run client\"",
+		"dev-start": "concurrently \"npm run dev-server\" \"npm run client\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^7.0.0"
+	}
+}
